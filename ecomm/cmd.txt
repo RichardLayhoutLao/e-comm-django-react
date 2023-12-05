@@ -1,0 +1,9 @@
+python -m django startproject mysite
+python -m django startapp movies
+
+
+python manage.py makemigrations
+python manage.py migrate
+
+source activate
+deactivate 
