@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']  # Public API exposed
 # Application definition
 
 INSTALLED_APPS = [
+    'api.user',
     'api.product',
     'api.category',
     'api',
@@ -129,6 +130,8 @@ STATIC_URL = 'static/'
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+AUTH_USER_MODEL = "user.CustomUser"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
