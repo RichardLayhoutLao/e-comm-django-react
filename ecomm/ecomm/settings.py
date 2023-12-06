@@ -33,6 +33,7 @@ ALLOWED_HOSTS = ['*']  # Public API exposed
 # Application definition
 
 INSTALLED_APPS = [
+    'api.category',
     'api',
     'rest_framework.authtoken',
     'rest_framework',
